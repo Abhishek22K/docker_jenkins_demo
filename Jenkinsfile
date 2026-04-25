@@ -1,11 +1,12 @@
 pipeline {
     agent any
 
-    environment {
-        GIT_REPOSITORY_URL = 'https://github.com/newdelthis/docker_jenkins_demo.git'
-        DOCKER_IMAGE_NAME = 'newdelthis/docker_jenkins_demo'
-        IMAGE_TAG = '1.0'
-    }
+	environment {
+        	GIT_REPOSITORY_URL = 'https://github.com/Abhishek22K/docker_jenkins_demo.git'
+        	DOCKER_IMAGE_NAME = 'Abhishek22K/docker_jenkins_demo'
+        	IMAGE_TAG = '1.0'
+   	 }	
+
 
     stages {
         stage('Clone Repository') {
